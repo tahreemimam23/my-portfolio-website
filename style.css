@@ -1,0 +1,375 @@
+/**
+* Template Name: PORTFOLIO
+* Updated: 5th Sept 2024 with Bootstrap v5
+* Author: Tahreem Imam
+*/
+
+/*--------------------------------------------------------------
+# Font & Color Variables
+# Help: https://bootstrapmade.com/color-system/
+--------------------------------------------------------------*/
+/* Fonts */
+:root {
+    --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Raleway", sans-serif;
+    --nav-font: "Poppins", sans-serif;
+}
+
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+:root {
+    --background-color: #ffffff;
+    /* Background color for the entire website, including individual sections */
+    --default-color: #4e4e4e;
+    /* Default color used for the majority of the text content across the entire website */
+    --heading-color: #0a090f;
+    /* Color for headings, subheadings and title throughout the website */
+    --accent-color: #0078ff;
+    /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+    --surface-color: #ffffff;
+    /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+    --contrast-color: #ffffff;
+    /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+}
+
+body {
+    color: var(--default-color);
+    background-color: var(--background-color);
+    font-family: var(--default-font);
+}
+
+/*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+.header,
+.header nav {
+    --background-color: #000000;
+    --default-color: #ffffff;
+    color: var(--default-color);
+    background-color: var(--background-color);
+}
+
+.header .logo img {
+    height: 45px;
+    width: 45px;
+}
+
+.navbar-brand {
+    --default-color: #ffffff;
+    color: var(--default-color);
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.navbar-nav li {
+    padding: 15px 14px;
+}
+
+.navbar-nav li a {
+    --default-color: #ffffff;
+    color: var(--default-color);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar-nav li a:hover {
+    --default-color: white;
+    text-decoration: underline;
+    color: var(--default-color);
+}
+
+/*--------------------------------------------------------------
+  # Global Sections
+  --------------------------------------------------------------*/
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.section-title p {
+    margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+  # Intro Section
+  --------------------------------------------------------------*/
+
+#intro {
+    /* background-color: #4a4a4a; */
+    background-color: #8c7ddc;
+}
+
+.intro .greeting {
+    font-size: 1.5rem;
+    color: #ac4a30;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.intro .intro-content {
+    font-size: 5rem;
+    font-weight: 700;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.intro .intro-details {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.intro-btn {
+    border: 2px solid #121110;
+    border-radius: 0%;
+    margin-right: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.btn-about:hover {
+    border-color: #ac4a30;
+    background-color: #ac4a30;
+    color: white;
+}
+
+.btn-contact:hover {
+    border-color: #121110;
+    background-color: #121110;
+    color: white;
+}
+
+.btn-cv:hover {
+    border-color: #121110;
+    background-color: white;
+    color: #121110;
+}
+
+/*--------------------------------------------------------------
+  # About Section
+  --------------------------------------------------------------*/
+#about .container {
+    background-color: var(--surface-color);
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.about .profile-image img {
+    height: 350px;
+    width: 350px;
+    /* border-radius: 50%; */
+    position: relative;
+    left: 20px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.about .skills-content {
+    margin-bottom: 30px;
+}
+
+.about .skills-content h5 {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 30px 0 15px 0;
+    /* text-align: center; */
+    /* border-bottom: 2px solid black; */
+}
+
+.about .progress {
+    height: 36px;
+    display: block;
+    background: none;
+    border-radius: 0;
+    margin-top: 15px;
+}
+
+.about .progress .skill {
+    color: var(--default-color);
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: var(--heading-font);
+}
+
+.about .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+
+.about .progress-bar-wrap {
+    background: color-mix(in srgb, var(--default-color), transparent 90%);
+    height: 10px;
+}
+
+.about .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: 0.9s;
+    background-color: blue;
+}
+
+
+.about .about-me h4 {
+    font-size: 28px;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.about .about-me p {
+    font-size: 18px;
+}
+
+/*--------------------------------------------------------------
+  # Project Section
+  --------------------------------------------------------------*/
+.project-row {
+    /* background-color: var(--surface-color); */
+    /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); */
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.project-row img {
+    height: 250px;
+}
+
+/*--------------------------------------------------------------
+  # Contact Section
+  --------------------------------------------------------------*/
+.contacts {
+    background-color: rgb(44, 44, 44);
+    color: rgb(203, 195, 195);
+}
+
+.contacts .info-wrap {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 400px;
+    font-size: 30px;
+}
+
+.info-item .text h3 {
+    padding-top: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 2px 0;
+}
+
+.info-item .text p {
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+/*--------------------------------------------------------------
+  # Global Footer
+  --------------------------------------------------------------*/
+.footer {
+    background-color: #f3f2f0;
+    font-size: 14px;
+    padding: 20px 0;
+    position: relative;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+}
+
+.scroll-top svg:hover {
+    fill: #173660;
+    cursor: pointer;
+}
+
+
+
+
+/*--------------------------------------------------------------
+  # Resume Section
+  --------------------------------------------------------------*/
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid var(--accent-color);
+    position: relative;
+}
+
+.resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+    font-size: 16px;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+    padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+    padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+    padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: var(--background-color);
+    border: 2px solid var(--accent-color);
+}
