@@ -270,6 +270,18 @@
                             Spartacus and Angular to improve user interaction. Additionally, I worked with Azure Storage
                             Explorer to generate
                             product Impex, streamlining the data management process for the platform.</li>
+                        <li class="list-group-item"><strong>Role: </strong>In my role as a developer, I utilized Impex,
+                            Backoffice, HAC,
+                            Java, and Spring in the backend to enhance the system’s functionality. I also developed
+                            several frontend features using
+                            Spartacus and Angular to improve user interaction.<span id="dots"> ...</span>
+                            <span id="more">
+                                Additionally, I worked with Azure Storage
+                                Explorer to generate
+                                product Impex, streamlining the data management process for the platform.
+                            </span>
+                            <button onclick="readMore()" id="myBtn">Read more</button>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -295,7 +307,8 @@
                             that allows users to easily perform basic mathematical calculations.</li>
                     </ul>
                     <div class="card-body">
-                        <a href="https://github.com/tahreemimam23/basic-calculator" class="card-link" target="_blank">Github Link to Project</a>
+                        <a href="https://github.com/tahreemimam23/basic-calculator" class="card-link"
+                            target="_blank">Github Link to Project</a>
                     </div>
                 </div>
             </div>
@@ -327,7 +340,8 @@
                             assess my qualifications.</li>
                     </ul>
                     <div class="card-body">
-                        <a href="https://github.com/tahreemimam23/my-portfolio-website" class="card-link" target="_blank">Github Link to Project</a>
+                        <a href="https://github.com/tahreemimam23/my-portfolio-website" class="card-link"
+                            target="_blank">Github Link to Project</a>
                     </div>
                 </div>
             </div>
@@ -356,7 +370,8 @@
                             retrieve documents.</li>
                     </ul>
                     <div class="card-body">
-                        <a href="https://github.com/tahreemimam23/secure-documents" class="card-link" target="_blank">Github Link to Project</a>
+                        <a href="https://github.com/tahreemimam23/secure-documents" class="card-link"
+                            target="_blank">Github Link to Project</a>
                     </div>
                 </div>
             </div>
@@ -387,7 +402,8 @@
                             sports enthusiasts.</li>
                     </ul>
                     <div class="card-body">
-                        <a href="https://github.com/tahreemimam23/sports-buddy" class="card-link" target="_blank">Github Link to Project</a>
+                        <a href="https://github.com/tahreemimam23/sports-buddy" class="card-link" target="_blank">Github
+                            Link to Project</a>
                     </div>
                 </div>
             </div>
@@ -516,6 +532,24 @@
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
 
+    </script>
+
+    <script>
+        function readMore() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
     </script>
 </body>
 

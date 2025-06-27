@@ -373,3 +373,5 @@ section p {
     background: var(--background-color);
     border: 2px solid var(--accent-color);
 }
+
+#more {display: none;}
